@@ -25,8 +25,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/name/sebastian/vogt/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+            <state relative-caret-position="162">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -35,11 +35,11 @@
       <file leaf-file-name="InsulinCalculator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/name/sebastian/vogt/InsulinCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+            <state relative-caret-position="214">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <element signature="e#1476#1477#0" expanded="true" />
-                <element signature="e#1559#1560#0" expanded="true" />
+                <element signature="e#1060#1061#0" expanded="true" />
+                <element signature="e#1143#1144#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,8 +88,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/name/sebastian/vogt/Range.java" />
         <option value="$PROJECT_DIR$/src/name/sebastian/vogt/BECalculator.java" />
-        <option value="$PROJECT_DIR$/src/name/sebastian/vogt/Main.java" />
         <option value="$PROJECT_DIR$/src/name/sebastian/vogt/InsulinCalculator.java" />
+        <option value="$PROJECT_DIR$/src/name/sebastian/vogt/Main.java" />
       </list>
     </option>
   </component>
@@ -427,19 +427,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/name/sebastian/vogt/InsulinCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        <state relative-caret-position="214">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1559#1560#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+            <element signature="e#1143#1144#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/name/sebastian/vogt/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        <state relative-caret-position="162">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>

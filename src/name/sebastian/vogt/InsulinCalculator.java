@@ -14,14 +14,7 @@ public class InsulinCalculator {
 
     protected BECalculator beCalculator;
 
-    public InsulinCalculator(double currentSugar, double insulinFactor, double correctionFactor, double targetSugar, BECalculator beCalculator) {
-        this.currentSugar = currentSugar;
-        this.insulinFactor = insulinFactor;
-        this.correctionFactor = correctionFactor;
-        this.targetSugar = targetSugar;
-        this.beCalculator = beCalculator;
-        this.be = this.beCalculator.compute();
-    }
+
 
     public InsulinCalculator(double currentSugar, double insulinFactor, double correctionFactor, double targetSugar, double be) {
         this.currentSugar = currentSugar;
