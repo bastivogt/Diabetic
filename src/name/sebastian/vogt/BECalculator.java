@@ -8,10 +8,10 @@ public class BECalculator {
     public static final int BE = 12;
     public static final int KHE = 10;
 
-    protected double value = 0;
-    protected double carbonProValue = 0;
-    protected double valueEat = 0;
-    protected int measure = 0;
+    protected double value;
+    protected double carbonProValue;
+    protected double valueEat;
+    protected int measure;
 
 
     public BECalculator(double value, double carbonProValue, double valueEat, int measure) {

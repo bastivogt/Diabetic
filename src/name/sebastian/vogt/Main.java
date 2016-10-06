@@ -11,6 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         sugar = 11;
+        System.out.println("Blutzucker = " + sugar);
 
         // (gramm auf der Packung z.b. 100, gramm KH, gramm wieviel gegessen, BE oder KHE)
         beCalculator = new BECalculator(
@@ -35,6 +36,8 @@ public class Main {
         System.out.println("Bolus IE = " + insulinCalculator.computeBolusInsulin());
         System.out.println("Korrektur IE = " + insulinCalculator.computeCorrectionInsulin());
         System.out.println("Gesamt IE = " + insulinCalculator.computeTotalInsulin());
+
+        System.out.println("Test = " + Helpers.roundDecPlaces(33.876589, 2));
 
 
 

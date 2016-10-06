@@ -5,8 +5,8 @@ package name.sebastian.vogt;
  */
 public class Range {
 
-    protected double start = 0;
-    protected double stop = 0;
+    protected double start;
+    protected double stop;
 
     public Range(double start, double stop) {
         this.start = start;

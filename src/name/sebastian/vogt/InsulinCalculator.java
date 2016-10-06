@@ -6,10 +6,10 @@ package name.sebastian.vogt;
 public class InsulinCalculator {
 
 
-    protected double currentSugar = 0;
-    protected double insulinFactor = 0;
-    protected double correctionFactor = 0;
-    protected double be = 0;
+    protected double currentSugar;
+    protected double insulinFactor;
+    protected double correctionFactor;
+    protected double be;
     protected double targetSugar;
 
     protected BECalculator beCalculator;
