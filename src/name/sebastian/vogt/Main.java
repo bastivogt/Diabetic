@@ -15,7 +15,7 @@ public class Main {
         /*System.out.println(range.inRange(6));
         System.out.println(range.inRange(11));*/
 
-        insulinCalculator = new InsulinCalculator(11, 1.5, 2, range, beCalculator);
+        insulinCalculator = new InsulinCalculator(11, 1.5, 2, 9, beCalculator);
         System.out.println("Bolus IE = " + insulinCalculator.computeBolusInsulin());
         System.out.println("Korrektur IE = " + insulinCalculator.computeCorrectionInsulin());
         System.out.println("Gesamt IE = " + insulinCalculator.computeTotalInsulin());

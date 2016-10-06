@@ -6,21 +6,29 @@ package name.sebastian.vogt;
 public class InsulinCalculator {
 
 
-    protected double bloodSugar = 0;
+    protected double currentSugar = 0;
     protected double insulinFactor = 0;
     protected double correctionFactor = 0;
     protected double be = 0;
-    protected Range targetSugar;
+    protected double targetSugar;
 
     protected BECalculator beCalculator;
 
-    public InsulinCalculator(double bloodSugar, double insulinFactor, double correctionFactor, Range targetSugar, BECalculator beCalculator) {
-        this.bloodSugar = bloodSugar;
+    public InsulinCalculator(double currentSugar, double insulinFactor, double correctionFactor, double targetSugar, BECalculator beCalculator) {
+        this.currentSugar = currentSugar;
         this.insulinFactor = insulinFactor;
         this.correctionFactor = correctionFactor;
         this.targetSugar = targetSugar;
         this.beCalculator = beCalculator;
         this.be = this.beCalculator.compute();
+    }
+
+    public InsulinCalculator(double currentSugar, double insulinFactor, double correctionFactor, double targetSugar, double be) {
+        this.currentSugar = currentSugar;
+        this.insulinFactor = insulinFactor;
+        this.correctionFactor = correctionFactor;
+        this.targetSugar = targetSugar;
+        this.be = be;
     }
 
 
@@ -34,22 +42,18 @@ public class InsulinCalculator {
     }
 
     public double computeCorrectionInsulin() {
-        return (this.bloodSugar - targetSugar.getStop()) / this.correctionFactor;
+        if(this.currentSugar > this.targetSugar) {
+            return (this.currentSugar - targetSugar) / this.correctionFactor;
+        }
+        return 0;
+
     }
 
-    public double computeCorrectionInsulin(boolean centered) {
-        if(centered) {
-            double tempAverage = (targetSugar.getStop() - targetSugar.getStart()) / 2;
-            return (this.bloodSugar - tempAverage) / this.correctionFactor;
-        }
-        return this.computeCorrectionInsulin();
-    }
+
 
     public double computeTotalInsulin() {
         return this.computeBolusInsulin() + this.computeCorrectionInsulin();
     }
 
-    public double computeTotalInsulin(boolean centered) {
-        return this.computeBolusInsulin() + this.computeCorrectionInsulin(centered);
-    }
+
 }
