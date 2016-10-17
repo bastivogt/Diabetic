@@ -10,17 +10,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        sugar = 11;
+        sugar = 15.9;
         System.out.println("Blutzucker = " + sugar);
 
         // (gramm auf der Packung z.b. 100, gramm KH, gramm wieviel gegessen, BE oder KHE)
         beCalculator = new BECalculator(
                 100,
-                24,
-                200,
+                11,
+                400,
                 BECalculator.BE
         );
-        System.out.println("BE = " + beCalculator.compute());
+        System.out.println("BE = " + Helpers.roundDecPlaces(beCalculator.compute(), 2));
 
         targetRange = new Range(4, 9);
         /*System.out.println(range.inRange(6));
@@ -28,16 +28,15 @@ public class Main {
 
         insulinCalculator = new InsulinCalculator(
                 sugar, // aktueller Blutzucker
-                1.5, // Insulinfaktor
+                1, // Insulinfaktor
                 correctionFactor, // Korrekturfaktor (um wieviel wird der Blutzucker mit 1 IE Bolus Insulin gesenkt
                 Math.round(targetRange.getAverage()), // Ziel Blutzucker
                 beCalculator.compute() // BE oder KHE
         );
-        System.out.println("Bolus IE = " + insulinCalculator.computeBolusInsulin());
-        System.out.println("Korrektur IE = " + insulinCalculator.computeCorrectionInsulin());
-        System.out.println("Gesamt IE = " + insulinCalculator.computeTotalInsulin());
+        System.out.println("Bolus IE = " + Helpers.roundDecPlaces(insulinCalculator.computeBolusInsulin(), 2));
+        System.out.println("Korrektur IE = " + Helpers.roundDecPlaces(insulinCalculator.computeCorrectionInsulin(), 2));
+        System.out.println("Gesamt IE = " + Helpers.roundDecPlaces(insulinCalculator.computeTotalInsulin(), 2));
 
-        System.out.println("Test = " + Helpers.roundDecPlaces(33.876589, 4));
 
         System.out.println("Average = " + Math.round(targetRange.getAverage()));
 

@@ -15,6 +15,12 @@ public class BECalculator {
 
 
     public BECalculator(double value, double carbonProValue, double valueEat, int measure) {
+        if(value <= 0) {
+            throw new IllegalArgumentException("value must be greater than 0!");
+        }
+        if(valueEat <= 0) {
+            throw new IllegalArgumentException("valueEat must be greater than 0!");
+        }
         this.value = value;
         this.carbonProValue = carbonProValue;
         this.valueEat = valueEat;
@@ -25,8 +31,8 @@ public class BECalculator {
 
 
     public double compute() {
-        double result = (this.valueEat * this.carbonProValue / value) / this.measure;
-        return result;
+        return (this.valueEat * this.carbonProValue / value) / this.measure;
+
     }
 
 }

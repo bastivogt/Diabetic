@@ -12,7 +12,7 @@ public class InsulinCalculator {
     protected double be;
     protected double targetSugar;
 
-    protected BECalculator beCalculator;
+
 
 
 

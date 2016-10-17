@@ -9,6 +9,9 @@ public class Range {
     protected double stop;
 
     public Range(double start, double stop) {
+        if(start >= stop) {
+            throw new IllegalArgumentException("start must be smaller than stop!");
+        }
         this.start = start;
         this.stop = stop;
     }
