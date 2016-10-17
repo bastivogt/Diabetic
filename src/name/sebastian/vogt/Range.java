@@ -39,4 +39,8 @@ public class Range {
         return false;
     }
 
+    public double getAverage() {
+        return (this.start + this.stop) / 2;
+    }
+
 }

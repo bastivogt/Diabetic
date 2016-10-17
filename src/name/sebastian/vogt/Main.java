@@ -30,14 +30,16 @@ public class Main {
                 sugar, // aktueller Blutzucker
                 1.5, // Insulinfaktor
                 correctionFactor, // Korrekturfaktor (um wieviel wird der Blutzucker mit 1 IE Bolus Insulin gesenkt
-                targetRange.getStop(), // Ziel Blutzucker
+                Math.round(targetRange.getAverage()), // Ziel Blutzucker
                 beCalculator.compute() // BE oder KHE
         );
         System.out.println("Bolus IE = " + insulinCalculator.computeBolusInsulin());
         System.out.println("Korrektur IE = " + insulinCalculator.computeCorrectionInsulin());
         System.out.println("Gesamt IE = " + insulinCalculator.computeTotalInsulin());
 
-        System.out.println("Test = " + Helpers.roundDecPlaces(33.876589, 2));
+        System.out.println("Test = " + Helpers.roundDecPlaces(33.876589, 4));
+
+        System.out.println("Average = " + Math.round(targetRange.getAverage()));
 
 
 
